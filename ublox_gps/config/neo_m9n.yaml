@@ -1,0 +1,17 @@
+device: /dev/ttyACM0
+frame_id: gps
+uart1:
+  baudrate: 9600
+config_on_startup: false
+
+enable_ppp: true
+
+gnss/sbas: true
+
+dynamic_model: pedestrian
+fix_mode: 2d
+
+gnss:
+  glonass: true             # Supported by C94-M8P
+  beidou: true             # Supported by C94-M8P
+  qzss: true               # Supported by C94-M8P
